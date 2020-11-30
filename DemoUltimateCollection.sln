@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Softuni", "Softuni", "{70A42AD2-08F8-4BA4-8021-E9A93C00EE3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Telerik", "Telerik", "{905C689D-0E93-4207-B066-44E8E62783CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Personal", "Personal", "{A2673F6A-F8AF-45EB-A4DA-8A5A527B546A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik.DemoFuncActionPredicate", "Telerik\Telerik.DemoFuncActionPredicate\Telerik.DemoFuncActionPredicate.csproj", "{EDB39734-3882-439E-9BB7-E9DA7DB7A4C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDB39734-3882-439E-9BB7-E9DA7DB7A4C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB39734-3882-439E-9BB7-E9DA7DB7A4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB39734-3882-439E-9BB7-E9DA7DB7A4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB39734-3882-439E-9BB7-E9DA7DB7A4C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EDB39734-3882-439E-9BB7-E9DA7DB7A4C5} = {905C689D-0E93-4207-B066-44E8E62783CB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BA7246A-7994-41F2-ABFA-7387E160ECF7}
+	EndGlobalSection
+EndGlobal
