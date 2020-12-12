@@ -4,7 +4,7 @@ namespace Personal.OOP.DemoEncapsulation
 {
     public class Class1
     {
-        private ParentClass parentClassInstance;
+        //private ParentClass parentClassInstance;
 
         // InternalClass is unaccessible due to its protection level.
         // private InternalClass internalClass;
