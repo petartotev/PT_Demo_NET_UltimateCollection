@@ -7,12 +7,15 @@ namespace Personal.General.ThreadNew
     {
         public static void Main()
         {
+            // Thread is a fundamental unit of code execution.
+            // Threads have instructions, their own Call Stack / Stack Trace, 'Main Method'...
+            // Threads are very 'expensive'!
             Thread myThread1 = new Thread(MainMyThread1);
             myThread1.Start();
 
             while (true)
             {
-                Console.ReadLine();
+                Console.WriteLine(Console.ReadLine().ToUpperInvariant());
             }
         }
 
@@ -33,3 +36,5 @@ namespace Personal.General.ThreadNew
         }
     }
 }
+
+// From the Main-Main() you cannot try-catch an exception coming from another thread...
