@@ -12,11 +12,37 @@ namespace Personal.General.TaskRun
             for (int i = 0; i < 100; i++)
             {
                 // 100 tasks, but only 8 threads creates "backstrage".
+                // Task Scheduler
+                // Task = Piece of work that has to be done. NikiTM
                 Task.Run(() =>
                 {
-                    Thread.Sleep(10000);
-                });
+                    for (int i = 1; i <= 2; i++)
+                    {
+                        Console.Beep(300, 500);
+                        Console.Beep(400, 500);
+                        Console.Beep(300, 500);
+                        Console.Beep(400, 500);
+                        Console.Beep(500, 750);
+                        Console.Beep(500, 750);
+                        Thread.Sleep(100);
+                    }
 
+                    Console.Beep(600, 500);
+                    Console.Beep(500, 500);
+                    Console.Beep(600, 500);
+                    Console.Beep(500, 500);
+                    Console.Beep(400, 750);
+                    Console.Beep(400, 750);
+                    Thread.Sleep(200);
+
+                    Console.Beep(500, 500);
+                    Console.Beep(400, 500);
+                    Console.Beep(500, 500);
+                    Console.Beep(400, 500);
+                    Console.Beep(300, 750);
+                    Console.Beep(300, 900);
+                    Thread.Sleep(200);
+                });
 
                 Task myTask = new Task(() =>
                 {
@@ -28,39 +54,31 @@ namespace Personal.General.TaskRun
                 });
                 myTask.Start();
 
+                Task.Run(() =>
+                {
+                    for (int i = 65; i <= 90; i++)
+                    {
+                        Console.WriteLine((char)i);
+                        Thread.Sleep(250);
+                    }
+                })                
+                .ContinueWith((previousTask) => // Here starts the second task >
+                {
+                    for (int j = 122; j >= 97; j--)
+                    {
+                        Console.WriteLine((char)j);
+                        Thread.Sleep(250);
+                    }
+                });
+
+                Task<string>.Run(() => { return "string"; });
+
                 while (true)
                 {
                     Console.ReadLine();
                 }
             }
         }
-
-        public static void Main2()
-        {
-            // Task Scheduler
-            // Task = Piece of work that has to be done. NikiTM
-            Task.Run(() =>
-            {
-                for (int i = 65; i <= 90; i++)
-                {
-                    Console.WriteLine((char)i);
-                    Thread.Sleep(250);
-                }
-            })
-            .ContinueWith((previousTask) =>
-            {
-                for (int j = 122; j >= 97; j--)
-                {
-                    Console.WriteLine((char)j);
-                    Thread.Sleep(250);
-                }
-            });
-
-            while (true)
-            {
-                Console.ReadLine();
-            }            
-        }        
     }
 }
 

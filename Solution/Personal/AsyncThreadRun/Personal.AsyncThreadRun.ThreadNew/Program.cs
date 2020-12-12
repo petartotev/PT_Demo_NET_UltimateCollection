@@ -10,6 +10,7 @@ namespace Personal.General.ThreadNew
             // Thread is a fundamental unit of code execution.
             // Threads have instructions, their own Call Stack / Stack Trace, 'Main Method'...
             // Threads are very 'expensive'!
+            // Thread is a sub-program of our main-program. When our program does more than one thing.
             Thread myThread1 = new Thread(MainMyThread1);
             myThread1.Start();
 
@@ -38,3 +39,6 @@ namespace Personal.General.ThreadNew
 }
 
 // From the Main-Main() you cannot try-catch an exception coming from another thread...
+// Processes => Threads => Handles (Ctrl + Alt + Del)
+// Handles are references to some resource (file).
+// Something like a 'number' for the resource.
