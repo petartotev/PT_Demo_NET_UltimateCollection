@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Personal.CSharp9.DemoInit
+namespace Personal.CSharp9.InitOnlySetters
 {
     public class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
