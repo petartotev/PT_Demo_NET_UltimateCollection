@@ -25,30 +25,26 @@ namespace CarDemo.Services
 
         public IEnumerable<CarServiceModel> GetAllCars()
         {
-            List<Car> cars = new List<Car>();
-
             //using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerConnection"].ConnectionString))
             //using (IDbConnection db = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=CarDemo;Integrated Security=True;"))
             using (IDbConnection db = new SqlConnection(config.GetConnectionString("DefaultConnection")))
             {
-                cars = db.Query<Car>("Select * From Cars").ToList();
+                List<Car> cars = db.Query<Car>("Select * From Cars").ToList();
+                var result = this.mapper.Map<IEnumerable<CarServiceModel>>(cars);
+                return result;
             }
-
-            var result = this.mapper.Map<IEnumerable<CarServiceModel>>(cars);
-            return result;
         }
 
         public CarServiceModel GetCarById(Guid id)
         {
-            Car car = new Car();
+            var sqlQuery = $"Select * From Cars Where Id = @CarId;";
 
             using (IDbConnection db = new SqlConnection(config.GetConnectionString("DefaultConnection")))
             {
-                car = db.Query<Car>($"Select * From Cars Where Id = '{id}'").SingleOrDefault();
+                Car car = db.Query<Car>(sqlQuery, new { CarId = id }).SingleOrDefault();
+                var result = this.mapper.Map<CarServiceModel>(car);
+                return result;
             }
-
-            var result = this.mapper.Map<CarServiceModel>(car);
-            return result;
         }
     }
 }
