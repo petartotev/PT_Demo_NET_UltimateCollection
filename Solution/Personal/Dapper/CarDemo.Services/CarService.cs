@@ -25,8 +25,8 @@ namespace CarDemo.Services
 
         public IEnumerable<CarServiceModel> GetAllCars()
         {
-            // GET: Customer
             List<Car> cars = new List<Car>();
+
             //using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerConnection"].ConnectionString))
             //using (IDbConnection db = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=CarDemo;Integrated Security=True;"))
             using (IDbConnection db = new SqlConnection(config.GetConnectionString("DefaultConnection")))
@@ -35,7 +35,6 @@ namespace CarDemo.Services
             }
 
             var result = this.mapper.Map<IEnumerable<CarServiceModel>>(cars);
-
             return result;
         }
 
