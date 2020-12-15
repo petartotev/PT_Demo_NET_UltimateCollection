@@ -1,0 +1,25 @@
+﻿@model IEnumerable<CarDemo.Web.Models.Engines.EngineViewModel>
+
+@{
+    ViewData["Title"] = "All";
+}
+
+<h1>All</h1>
+
+@foreach (var item in Model)
+{
+    <div class="row border border-success">
+        <div class="col-md-6">
+            <p>Id: @item.Id</p>
+            <p>Name: @item.Name</p>
+            <p>Cylinders: @item.NumberCylinders</p>
+            <p>Volume: @item.Volume</p>
+            <p>Date: @item.DateProduction</p>
+            <p>Price: @item.Price $</p>
+        </div>
+        <div class="col-md-6 text-right">
+            <a href="@Url.Action("Engine", "Engines", new { id = item.Id })"><img src="@item.Image" height="240" /></a>
+        </div>
+    </div>
+    <br />
+}

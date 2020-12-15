@@ -1,0 +1,21 @@
+﻿@model CarDemo.Web.Models.Engines.EngineViewModel
+@{
+    ViewData["Title"] = "Engine";
+}
+
+<h1>Engine</h1>
+
+<div class="row border border-success">
+    <div class="col-md-6">
+        <p>Id: @Model.Id</p>
+        <p>Name: @Model.Name</p>
+        <p>Cylinders: @Model.NumberCylinders</p>
+        <p>Volume: @Model.Volume</p>
+        <p>Date: @Model.DateProduction</p>
+        <p>Price: @Model.Price $</p>
+    </div>
+    <div class="col-md-6 text-right">
+        <a href="@Url.Action("Engine", "Engines", new { id = Model.Id })"><img src="@Model.Image" height="240" /></a>
+    </div>
+</div>
+<br />
