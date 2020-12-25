@@ -25,11 +25,13 @@ namespace CarDemo.Services
 
         public IEnumerable<CarServiceModel> GetAllCars()
         {
+            var sql = "Select * From Cars";
+
             //using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerConnection"].ConnectionString))
             //using (IDbConnection db = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=CarDemo;Integrated Security=True;"))
             using (IDbConnection db = new SqlConnection(config.GetConnectionString("DefaultConnection")))
             {
-                List<Car> cars = db.Query<Car>("Select * From Cars").ToList();
+                List<Car> cars = db.Query<Car>(sql).ToList();
                 var result = this.mapper.Map<IEnumerable<CarServiceModel>>(cars);
                 return result;
             }
@@ -37,11 +39,11 @@ namespace CarDemo.Services
 
         public CarServiceModel GetCarById(Guid id)
         {
-            var sqlQuery = $"Select * From Cars Where Id = @CarId;";
+            var sql = "Select * From Cars Where Id = @CarId;";
 
             using (IDbConnection db = new SqlConnection(config.GetConnectionString("DefaultConnection")))
             {
-                Car car = db.Query<Car>(sqlQuery, new { CarId = id }).SingleOrDefault();
+                Car car = db.Query<Car>(sql, new { CarId = id }).SingleOrDefault();
                 var result = this.mapper.Map<CarServiceModel>(car);
                 return result;
             }
