@@ -10,6 +10,12 @@ PT_Demo_UltimateCollection is an ultimate collection of demos, tests, examples, 
 
 ## /Solution/Personal/Dapper
 
+## /Solution/Personal/General
+
+### Contents
+
+- Personal.General.DemoSyntacticTricks
+
 ### Contents
 
 - CarDemo.Console

@@ -1,0 +1,33 @@
+﻿<div>
+    <div class="text-center">
+        <h1 class="display-1">Hello</h1>
+        <h2>You are welcome!</h2>
+        <hr />
+    </div>
+    <div>
+        <p>This is some text that needs to do something via jQuery tricks...</p>
+        <h6>Here is a h6 heading!</h6>
+        <mark id="markToDisappear" class="text-danger">If you click on me I will disappear...</mark>
+        <p>This is just another text for the same reason...</p>
+        <p class="text-danger">This is a class "text-danger" paragraph.</p>
+        <h5>Heading 5</h5>
+        <p class="text-danger">Some other paragraph with class "text-danger".</p>
+        <button id="buttonToHideClassTextDanger" class="btn btn-lg btn-danger text-white">HIDE CLASS "TEXT-DANGER"</button>
+    </div>    
+</div>
+
+@section Scripts {
+<script>
+    $(document).ready(function () {
+        $("#markToDisappear").click(function () {
+            $(this).hide();
+        });
+    });
+
+    $(document).ready(function () {
+        $("#buttonToHideClassTextDanger").click(function () {
+            $(".text-danger").hide();
+        });
+    })
+</script>
+}
