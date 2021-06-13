@@ -73,7 +73,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "General", "General", "{A01C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.General.DemoSyntacticTricks", "Personal\General\Personal.General.DemoSyntacticTricks\Personal.General.DemoSyntacticTricks.csproj", "{A81E1FBB-AE21-4E29-9902-E48EE8CC356D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal.General.jQueryTricks", "Personal\General\Personal.General.jQueryTricks\Personal.General.jQueryTricks.csproj", "{8416D6E7-252F-4FF6-AF5E-13C791BE53B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.General.jQueryTricks", "Personal\General\Personal.General.jQueryTricks\Personal.General.jQueryTricks.csproj", "{8416D6E7-252F-4FF6-AF5E-13C791BE53B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Semaphore", "Semaphore", "{D28459A9-EF0F-4DD3-B07B-D9B47F63A78D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemaphoreClassExample", "Personal\Semaphore\SemaphoreClassExample\SemaphoreClassExample.csproj", "{B4123A1C-62A4-40ED-870B-55BD8E4A45B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -177,6 +181,10 @@ Global
 		{8416D6E7-252F-4FF6-AF5E-13C791BE53B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8416D6E7-252F-4FF6-AF5E-13C791BE53B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8416D6E7-252F-4FF6-AF5E-13C791BE53B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4123A1C-62A4-40ED-870B-55BD8E4A45B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4123A1C-62A4-40ED-870B-55BD8E4A45B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4123A1C-62A4-40ED-870B-55BD8E4A45B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4123A1C-62A4-40ED-870B-55BD8E4A45B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -215,6 +223,8 @@ Global
 		{A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB} = {A2673F6A-F8AF-45EB-A4DA-8A5A527B546A}
 		{A81E1FBB-AE21-4E29-9902-E48EE8CC356D} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
 		{8416D6E7-252F-4FF6-AF5E-13C791BE53B5} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
+		{D28459A9-EF0F-4DD3-B07B-D9B47F63A78D} = {A2673F6A-F8AF-45EB-A4DA-8A5A527B546A}
+		{B4123A1C-62A4-40ED-870B-55BD8E4A45B7} = {A2673F6A-F8AF-45EB-A4DA-8A5A527B546A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BA7246A-7994-41F2-ABFA-7387E160ECF7}
