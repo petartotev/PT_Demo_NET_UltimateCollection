@@ -61,7 +61,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telerik.InterfacesExplicitI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.Async.AsyncAwait", "Personal\Async\Personal.Async.AsyncAwait\Personal.Async.AsyncAwait.csproj", "{6835F281-CD8A-4153-B9F9-415C6EE7724E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemaphoreClassExample", "Personal\Async\Personal.Async.Semaphore\SemaphoreClassExample.csproj", "{5D440D21-C103-4993-8480-614C403CB9AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.Async.Semaphore", "Personal\Async\Personal.Async.Semaphore\Personal.Async.Semaphore.csproj", "{5D440D21-C103-4993-8480-614C403CB9AB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.Async.TaskRun", "Personal\Async\Personal.Async.TaskRun\Personal.Async.TaskRun.csproj", "{28054F8A-8478-4E87-BDC8-EEEF02093C83}"
 EndProject
