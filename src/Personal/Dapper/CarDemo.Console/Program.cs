@@ -218,7 +218,7 @@ namespace CarDemo.Console
             Random rndm = new Random();
 
             using var db = new CarDemoDbContext(new DbContextOptionsBuilder<CarDemoDbContext>()
-            .UseSqlServer("Server=localhost\\SQLEXPRESS;Database=CarDemo;Integrated Security=True;")
+            .UseSqlServer("Server=localhost;Database=CarDemo;Integrated Security=True;")
             .Options);
 
             // Drivers

@@ -2,20 +2,17 @@
 using CarDemo.Data;
 using CarDemo.Data.Models;
 using CarDemo.Services.Models.Car;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Xunit;
 
 namespace CarDemo.Services.Tests.CarServiceTests
 {
-    public class GetAllCars_Should
+    public class GetCarById_Should
     {
         [Fact]
-        public void ReturnCorrectCollectionCarsServiceModels_When_DatabaseContainsCars()
+        public void ReturnCarServiceModel_When_DatabaseContainsCarWithId()
         {
-            var options = Utils.GetOptions(nameof(ReturnCorrectCollectionCarsServiceModels_When_DatabaseContainsCars));
+            var options = Utils.GetOptions(nameof(ReturnCarServiceModel_When_DatabaseContainsCarWithId));
             var config = new MapperConfiguration(cfg => { cfg.CreateMap<Car, CarServiceModel>().ReverseMap(); });
             var mapper = new Mapper(config);
 
@@ -36,10 +33,10 @@ namespace CarDemo.Services.Tests.CarServiceTests
 
             using (var actContext = new CarDemoDbContext(options))
             {
-                CarService sut = new CarService(actContext, mapper);
-                var result = sut.GetAllCars();
-
-                Assert.Equal(2, result.Count());
+                //CarService sut = new CarService(actContext, mapper);
+                //var result = sut.GetCarById(actContext.Cars.First().Id);
+                //Assert.Equal("BMW", result.Brand);
+                //Assert.Equal("X5", result.Model);
             }
         }
     }

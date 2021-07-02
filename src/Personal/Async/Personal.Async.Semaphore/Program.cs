@@ -6,11 +6,13 @@ namespace SemaphoreClassExample
     public class Program
     {
         private static int _padding;
-        private static Semaphore _pool;
+        private static Semaphore _pool; // : WaitHandle : MarshalByRefObject, IDisposable
 
         public static void Main()
         {
-            // new Semaphore (initial count, maximum count)
+            // Initializes a new instance of the Semaphore class, specifying the initial number of entries and the maximum number of concurrent entries.
+            // new Semaphore(int initial count, int maximum count)
+            // new Semaphore(int initial count, int maximum count, string? name of a system semaphore object)
             _pool = new Semaphore(0, 3);
 
             for (int i = 1; i <= 5; i++)
@@ -24,7 +26,7 @@ namespace SemaphoreClassExample
 
             Thread.Sleep(500);
 
-            Console.WriteLine("Main thread releases the entire semaphore count.");
+            Console.WriteLine("Main thread releases(3) the entire semaphore count.");
             // Exits the semaphore a specified number of times and returns the previous count.
             _pool.Release(3);
 
