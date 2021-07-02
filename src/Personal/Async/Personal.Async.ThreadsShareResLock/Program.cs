@@ -44,7 +44,7 @@ namespace Personal.General.ThreadsShareResLock
             // Exactly 200_000.
         }
 
-        public static void MainUsing1ResourceFor2ThreadsWithoutLockingGivingBadResults()
+        public static void MainUsingSharedResourceBy2ThreadsNoLocking_BadResult()
         {
             decimal money = 0;
 

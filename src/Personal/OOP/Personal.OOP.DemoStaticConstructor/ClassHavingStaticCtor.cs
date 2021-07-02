@@ -14,11 +14,11 @@ namespace Personal.OOP.DemoStaticConstructor
             Console.WriteLine("This is the static ctor calling!");
         }
 
-        public ClassHavingStaticCtor()
+        public ClassHavingStaticCtor(string objectInstance)
         {
             PropInt = 0;
             PropString = "string";
-            Console.WriteLine("This is the normal ctor calling!");
+            Console.WriteLine($"This is the normal ctor called for {objectInstance}!");
         }
 
         public ClassHavingStaticCtor(int propInt, string propString)

@@ -8,7 +8,6 @@ using CarDemo.Web.Models.Engines;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
-using Xunit;
 
 namespace CarDemo.Services.Tests
 {

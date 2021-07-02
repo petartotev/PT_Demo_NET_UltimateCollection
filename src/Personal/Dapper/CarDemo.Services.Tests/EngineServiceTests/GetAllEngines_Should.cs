@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Xunit;
+﻿using Xunit;
 
 namespace CarDemo.Services.Tests.EngineServiceTests
 {
@@ -10,7 +7,6 @@ namespace CarDemo.Services.Tests.EngineServiceTests
         [Fact]
         public void ReturnCorrectCollectionEnginesServiceModels_When_DatabaseContainsEngines()
         {
-
         }
     }
 }

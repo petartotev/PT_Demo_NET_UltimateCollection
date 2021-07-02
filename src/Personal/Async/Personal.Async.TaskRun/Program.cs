@@ -2,6 +2,9 @@
 using System.Threading;
 using System.Threading.Tasks;
 
+// Multithreaded programming = 8 threads, 8 tasks.
+// Asynchronous programming = 1 thread, many tasks.
+// For example: 1 waiter, 8 chefs (processor cores), 100 tables (processes). The waiter is a Task Scheduler.
 namespace Personal.General.TaskRun
 {
     public class Program
@@ -11,38 +14,12 @@ namespace Personal.General.TaskRun
         {
             for (int i = 0; i < 100; i++)
             {
+                // Thread = Fundamental unit of code execution
+
+                // Task = Piece of work that has to be done. #NikiTM
                 // 100 tasks, but only 8 threads creates "backstrage".
                 // Task Scheduler
-                // Task = Piece of work that has to be done. NikiTM
-                Task.Run(() =>
-                {
-                    for (int i = 1; i <= 2; i++)
-                    {
-                        Console.Beep(300, 500);
-                        Console.Beep(400, 500);
-                        Console.Beep(300, 500);
-                        Console.Beep(400, 500);
-                        Console.Beep(500, 750);
-                        Console.Beep(500, 750);
-                        Thread.Sleep(100);
-                    }
-
-                    Console.Beep(600, 500);
-                    Console.Beep(500, 500);
-                    Console.Beep(600, 500);
-                    Console.Beep(500, 500);
-                    Console.Beep(400, 750);
-                    Console.Beep(400, 750);
-                    Thread.Sleep(200);
-
-                    Console.Beep(500, 500);
-                    Console.Beep(400, 500);
-                    Console.Beep(500, 500);
-                    Console.Beep(400, 500);
-                    Console.Beep(300, 750);
-                    Console.Beep(300, 900);
-                    Thread.Sleep(200);
-                });
+                Task.Run(() => PlayMusic());
 
                 Task myTask = new Task(() =>
                 {
@@ -61,7 +38,7 @@ namespace Personal.General.TaskRun
                         Console.WriteLine((char)i);
                         Thread.Sleep(250);
                     }
-                })                
+                })
                 .ContinueWith((previousTask) => // Here starts the second task >
                 {
                     for (int j = 122; j >= 97; j--)
@@ -79,11 +56,35 @@ namespace Personal.General.TaskRun
                 }
             }
         }
+
+        private static void PlayMusic()
+        {
+            for (int i = 1; i <= 2; i++)
+            {
+                Console.Beep(300, 500);
+                Console.Beep(400, 500);
+                Console.Beep(300, 500);
+                Console.Beep(400, 500);
+                Console.Beep(500, 750);
+                Console.Beep(500, 750);
+                Thread.Sleep(100);
+            }
+
+            Console.Beep(600, 500);
+            Console.Beep(500, 500);
+            Console.Beep(600, 500);
+            Console.Beep(500, 500);
+            Console.Beep(400, 750);
+            Console.Beep(400, 750);
+            Thread.Sleep(200);
+
+            Console.Beep(500, 500);
+            Console.Beep(400, 500);
+            Console.Beep(500, 500);
+            Console.Beep(400, 500);
+            Console.Beep(300, 750);
+            Console.Beep(300, 900);
+            Thread.Sleep(200);
+        }
     }
 }
-
-// Asynchronous - 1 thread, many tasks
-// 1 waiter, 8 chefs (processor cores), 100 tables (processes).
-// The waiter is a Task Scheduler.
-
-// Multithreading - 8 threads, 8 tasks.

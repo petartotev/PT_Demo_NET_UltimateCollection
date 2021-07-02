@@ -4,7 +4,7 @@ namespace Telerik.DemoFuncActionPredicate
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {            
             Func<int, int> myFunc1 = x => x * 2;
 

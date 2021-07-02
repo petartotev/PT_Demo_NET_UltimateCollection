@@ -4,7 +4,6 @@
     {
         public InitCar()
         {
-
         }
 
         public string Color { get; init; }

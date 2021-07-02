@@ -1,5 +1,4 @@
-﻿using System;
-using Telerik.DemoInterfacesExplicitImplicit.Contracts;
+﻿using Telerik.DemoInterfacesExplicitImplicit.Contracts;
 
 namespace Telerik.DemoInterfacesExplicitImplicit
 {

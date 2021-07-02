@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Personal.OOP.DemoEncapsulationLib1
+﻿namespace Personal.OOP.DemoEncapsulationLib1
 {
     class ChildClass : ParentClass
     {

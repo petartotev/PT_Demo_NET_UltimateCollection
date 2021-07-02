@@ -73,6 +73,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.Async.ThreadsShare
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.Async.WpfDemo", "Personal\Async\Personal.Async.WpfDemo\Personal.Async.WpfDemo.csproj", "{920B0472-90D1-4B3E-AB57-0FC862AABD3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal.Async.Synchronous", "Personal\Async\Personal.Async.Synchronous\Personal.Async.Synchronous.csproj", "{2BB8AA63-E558-4E23-AF61-8D65FC0D004A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -175,6 +177,10 @@ Global
 		{920B0472-90D1-4B3E-AB57-0FC862AABD3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{920B0472-90D1-4B3E-AB57-0FC862AABD3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{920B0472-90D1-4B3E-AB57-0FC862AABD3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BB8AA63-E558-4E23-AF61-8D65FC0D004A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB8AA63-E558-4E23-AF61-8D65FC0D004A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB8AA63-E558-4E23-AF61-8D65FC0D004A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB8AA63-E558-4E23-AF61-8D65FC0D004A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -213,6 +219,7 @@ Global
 		{6EFD0AD2-F1BB-474F-AEC1-07A74A8F9113} = {6AB56D09-123E-4FAF-AF76-58E83423D85E}
 		{D304432E-7BBE-4825-AEAD-F83DC5A1B323} = {6AB56D09-123E-4FAF-AF76-58E83423D85E}
 		{920B0472-90D1-4B3E-AB57-0FC862AABD3A} = {6AB56D09-123E-4FAF-AF76-58E83423D85E}
+		{2BB8AA63-E558-4E23-AF61-8D65FC0D004A} = {6AB56D09-123E-4FAF-AF76-58E83423D85E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BA7246A-7994-41F2-ABFA-7387E160ECF7}
