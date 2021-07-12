@@ -14,8 +14,8 @@ namespace Personal.General.ThreadNew
         {
             // Threads is a fundamental unit of code execution.
             // Threads have instructions, their own Call Stack / Stack Trace, 'Main Method'...
-            // Threads are very 'expensive'!
             // Thread is a sub-program of our main program, when our program does more than one thing.
+            // Threads are very 'expensive'!
             Thread myThread = new Thread(MainMethodMyThread);
             myThread.Start();
 

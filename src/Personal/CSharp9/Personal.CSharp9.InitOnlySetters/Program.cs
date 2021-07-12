@@ -4,7 +4,7 @@ namespace Personal.CSharp9.InitOnlySetters
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             InitCar myCar1 = new InitCar()
             {

@@ -5,7 +5,7 @@ namespace Personal.General.ThreadsDeadlock
     public class Program
     {
         // DEADLOCK!
-        public static void Main(string[] args)
+        public static void Main()
         {
             object padlock1 = new object();
             object padlock2 = new object();

@@ -18,7 +18,6 @@ namespace Personal.Async.Synchronous
             {
                 num++;
                 Console.WriteLine(num);
-
                 num--;
                 Console.WriteLine(num);
             }

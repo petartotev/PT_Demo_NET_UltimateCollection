@@ -213,7 +213,7 @@ namespace CarDemo.Console
             "Grey"
         };
 
-        static void Main(string[] args)
+        public static void Main()
         {
             Random rndm = new Random();
 

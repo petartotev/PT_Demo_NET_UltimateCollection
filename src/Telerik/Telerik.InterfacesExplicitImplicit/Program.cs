@@ -2,11 +2,11 @@
 
 namespace Telerik.DemoInterfacesExplicitImplicit
 {
+    // Explicitly and Implicitly implemented Interfaces:
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            // EXPLICITLY AND IMPLICITLY IMPLEMENTED INTERFACES
             IMate myMate = new Person();
             IMan myMan = new Person();
             Person myPerson = new Person();
