@@ -49,11 +49,11 @@ namespace Personal.Async.TaskCancellation
             CancellationTokenSource source = new CancellationTokenSource();
             CancellationToken token = source.Token;
 
-            // Play song on another parallel thread.
+            // Play song on another parallel (Worker) thread.
             // Pass a token in order to cancel the task later from this thread.
             PlayMusicParallel(token);
 
-            // Execute an infinite loop on the current thread.
+            // Execute an infinite loop on the current (Main) thread.
             while (true)
             {
                 var key = Console.ReadKey(true).Key;
@@ -74,8 +74,6 @@ namespace Personal.Async.TaskCancellation
         {
             return Task.Run(() =>
             {
-                Sample mySample = new Sample();
-
                 int[] tones = new int[] { 300, 400, 300, 400, 500, 500 };
 
                 while (true)
@@ -84,7 +82,7 @@ namespace Personal.Async.TaskCancellation
                     {
                         if (token.IsCancellationRequested)
                         {
-                            Console.WriteLine("Music played on a Worker Thread is stopped from the Main Thread!");
+                            Console.WriteLine("Music played on a Worker Thread was stopped from the Main Thread!");
                             return;
                         }
                         Console.Beep(tones[i], tones[i]);
