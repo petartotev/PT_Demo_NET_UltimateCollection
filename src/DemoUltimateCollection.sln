@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30621.155
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Telerik", "Telerik", "{905C689D-0E93-4207-B066-44E8E62783CB}"
 EndProject
@@ -95,7 +95,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.SQL.BulkInsert", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.General.EncapsulationVsReflection", "Personal\General\Personal.General.EncapsulationVsReflection\Personal.General.EncapsulationVsReflection.csproj", "{1D4B60D0-A94F-4403-B83F-0D1ADC11FDB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal.General.NullableEnable", "Personal\General\Personal.General.NullableEnable\Personal.General.NullableEnable.csproj", "{6C38B3C0-7D7F-4B7A-84B2-ABAE021848CB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{614EEF27-5414-4F5C-BE64-9151EE9EF60B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.Algorithms.Greedy", "Personal\Algorithms\Personal.Algorithms.Greedy\Personal.Algorithms.Greedy.csproj", "{3295B056-310B-44FD-8F63-28E5EB834E35}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.Algorithms.Recursion", "Personal\Algorithms\Personal.Algorithms.Recursion\Personal.Algorithms.Recursion.csproj", "{6274EC21-3C64-440B-824E-35C76B2F754B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.Algorithms.SearchSort", "Personal\Algorithms\Personal.Algorithms.SearchSort\Personal.Algorithms.SearchSort.csproj", "{A5FD20A6-AAD4-4663-B152-099C66992DB0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.Algorithms.Graphs", "Personal\Algorithms\Personal.Algorithms.Graphs\Personal.Algorithms.Graphs.csproj", "{F88B9190-64D2-48C2-86B4-27D70BDAEE76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal.General.Operators", "Personal\General\Personal.General.Operators\Personal.General.Operators.csproj", "{09FDD009-561E-463C-9704-9B3BCD56FE74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -235,10 +245,26 @@ Global
 		{1D4B60D0-A94F-4403-B83F-0D1ADC11FDB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D4B60D0-A94F-4403-B83F-0D1ADC11FDB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D4B60D0-A94F-4403-B83F-0D1ADC11FDB8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6C38B3C0-7D7F-4B7A-84B2-ABAE021848CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6C38B3C0-7D7F-4B7A-84B2-ABAE021848CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6C38B3C0-7D7F-4B7A-84B2-ABAE021848CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6C38B3C0-7D7F-4B7A-84B2-ABAE021848CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3295B056-310B-44FD-8F63-28E5EB834E35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3295B056-310B-44FD-8F63-28E5EB834E35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3295B056-310B-44FD-8F63-28E5EB834E35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3295B056-310B-44FD-8F63-28E5EB834E35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6274EC21-3C64-440B-824E-35C76B2F754B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6274EC21-3C64-440B-824E-35C76B2F754B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6274EC21-3C64-440B-824E-35C76B2F754B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6274EC21-3C64-440B-824E-35C76B2F754B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5FD20A6-AAD4-4663-B152-099C66992DB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5FD20A6-AAD4-4663-B152-099C66992DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5FD20A6-AAD4-4663-B152-099C66992DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5FD20A6-AAD4-4663-B152-099C66992DB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F88B9190-64D2-48C2-86B4-27D70BDAEE76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88B9190-64D2-48C2-86B4-27D70BDAEE76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88B9190-64D2-48C2-86B4-27D70BDAEE76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88B9190-64D2-48C2-86B4-27D70BDAEE76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09FDD009-561E-463C-9704-9B3BCD56FE74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09FDD009-561E-463C-9704-9B3BCD56FE74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09FDD009-561E-463C-9704-9B3BCD56FE74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09FDD009-561E-463C-9704-9B3BCD56FE74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -288,7 +314,12 @@ Global
 		{CB300329-9609-4FC4-B61B-0BF65D6C3936} = {A2673F6A-F8AF-45EB-A4DA-8A5A527B546A}
 		{D726300D-8CA2-4BFC-8742-A38A096B407C} = {CB300329-9609-4FC4-B61B-0BF65D6C3936}
 		{1D4B60D0-A94F-4403-B83F-0D1ADC11FDB8} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
-		{6C38B3C0-7D7F-4B7A-84B2-ABAE021848CB} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
+		{614EEF27-5414-4F5C-BE64-9151EE9EF60B} = {A2673F6A-F8AF-45EB-A4DA-8A5A527B546A}
+		{3295B056-310B-44FD-8F63-28E5EB834E35} = {614EEF27-5414-4F5C-BE64-9151EE9EF60B}
+		{6274EC21-3C64-440B-824E-35C76B2F754B} = {614EEF27-5414-4F5C-BE64-9151EE9EF60B}
+		{A5FD20A6-AAD4-4663-B152-099C66992DB0} = {614EEF27-5414-4F5C-BE64-9151EE9EF60B}
+		{F88B9190-64D2-48C2-86B4-27D70BDAEE76} = {614EEF27-5414-4F5C-BE64-9151EE9EF60B}
+		{09FDD009-561E-463C-9704-9B3BCD56FE74} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BA7246A-7994-41F2-ABFA-7387E160ECF7}
