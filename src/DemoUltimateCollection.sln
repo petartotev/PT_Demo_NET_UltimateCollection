@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Telerik", "Telerik", "{905C689D-0E93-4207-B066-44E8E62783CB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Personal", "Personal", "{A2673F6A-F8AF-45EB-A4DA-8A5A527B546A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.OOP.DemoEncapsulation", "Personal\OOP\Personal.OOP.DemoEncapsulation\Personal.OOP.DemoEncapsulation.csproj", "{1F83462A-FF28-4439-93F5-36AC27089EFD}"
@@ -46,10 +44,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "General", "General", "{A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.General.jQueryTricks", "Personal\General\Personal.General.jQueryTricks\Personal.General.jQueryTricks.csproj", "{8416D6E7-252F-4FF6-AF5E-13C791BE53B5}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telerik.FuncActionPredicate", "Telerik\Telerik.FuncActionPredicate\Telerik.FuncActionPredicate.csproj", "{6A2CE89C-EC2B-4E1B-BC78-4BB667F5E18C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telerik.InterfacesExplicitImplicit", "Telerik\Telerik.InterfacesExplicitImplicit\Telerik.InterfacesExplicitImplicit.csproj", "{42EB5AE7-A397-4332-99F3-1296B7345276}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.Async.AsyncAwait", "Personal\Async\Personal.Async.AsyncAwait\Personal.Async.AsyncAwait.csproj", "{6835F281-CD8A-4153-B9F9-415C6EE7724E}"
 EndProject
@@ -103,7 +97,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Using", "Using", "{4C879486
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoFuzzySharp", "Using\DemoFuzzySharp\DemoFuzzySharp.csproj", "{2AF5AB95-5AE3-4AB2-BCC1-6ADB601BE050}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoRulesEngine", "Using\DemoRulesEngine\DemoRulesEngine.csproj", "{65DF1995-0205-47C9-88B5-613AFECB93F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoRulesEngine", "Using\DemoRulesEngine\DemoRulesEngine.csproj", "{65DF1995-0205-47C9-88B5-613AFECB93F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal.General.FuncActionPredicate", "Personal\General\Personal.General.FuncActionPredicate\Personal.General.FuncActionPredicate.csproj", "{E8FD9FF5-71CD-4A10-8C90-5577688E5A97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal.General.InterfacesExplicitImplicit", "Personal\General\Personal.General.InterfacesExplicitImplicit\Personal.General.InterfacesExplicitImplicit.csproj", "{FAB0E358-D662-452A-901E-62E7864131F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,14 +157,6 @@ Global
 		{8416D6E7-252F-4FF6-AF5E-13C791BE53B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8416D6E7-252F-4FF6-AF5E-13C791BE53B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8416D6E7-252F-4FF6-AF5E-13C791BE53B5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6A2CE89C-EC2B-4E1B-BC78-4BB667F5E18C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6A2CE89C-EC2B-4E1B-BC78-4BB667F5E18C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6A2CE89C-EC2B-4E1B-BC78-4BB667F5E18C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6A2CE89C-EC2B-4E1B-BC78-4BB667F5E18C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{42EB5AE7-A397-4332-99F3-1296B7345276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{42EB5AE7-A397-4332-99F3-1296B7345276}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{42EB5AE7-A397-4332-99F3-1296B7345276}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{42EB5AE7-A397-4332-99F3-1296B7345276}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6835F281-CD8A-4153-B9F9-415C6EE7724E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6835F281-CD8A-4153-B9F9-415C6EE7724E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6835F281-CD8A-4153-B9F9-415C6EE7724E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -259,6 +249,14 @@ Global
 		{65DF1995-0205-47C9-88B5-613AFECB93F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65DF1995-0205-47C9-88B5-613AFECB93F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65DF1995-0205-47C9-88B5-613AFECB93F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8FD9FF5-71CD-4A10-8C90-5577688E5A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8FD9FF5-71CD-4A10-8C90-5577688E5A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8FD9FF5-71CD-4A10-8C90-5577688E5A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8FD9FF5-71CD-4A10-8C90-5577688E5A97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAB0E358-D662-452A-901E-62E7864131F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB0E358-D662-452A-901E-62E7864131F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB0E358-D662-452A-901E-62E7864131F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB0E358-D662-452A-901E-62E7864131F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -284,8 +282,6 @@ Global
 		{58A04D1D-9777-43AE-A0B0-29A38F5E70BC} = {8F4B0B72-5884-4AAE-9384-1BD377D5EB7F}
 		{A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB} = {A2673F6A-F8AF-45EB-A4DA-8A5A527B546A}
 		{8416D6E7-252F-4FF6-AF5E-13C791BE53B5} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
-		{6A2CE89C-EC2B-4E1B-BC78-4BB667F5E18C} = {905C689D-0E93-4207-B066-44E8E62783CB}
-		{42EB5AE7-A397-4332-99F3-1296B7345276} = {905C689D-0E93-4207-B066-44E8E62783CB}
 		{6835F281-CD8A-4153-B9F9-415C6EE7724E} = {6AB56D09-123E-4FAF-AF76-58E83423D85E}
 		{5D440D21-C103-4993-8480-614C403CB9AB} = {6AB56D09-123E-4FAF-AF76-58E83423D85E}
 		{28054F8A-8478-4E87-BDC8-EEEF02093C83} = {6AB56D09-123E-4FAF-AF76-58E83423D85E}
@@ -312,6 +308,8 @@ Global
 		{09FDD009-561E-463C-9704-9B3BCD56FE74} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
 		{2AF5AB95-5AE3-4AB2-BCC1-6ADB601BE050} = {4C879486-8C25-4FFC-89D1-09E83F968807}
 		{65DF1995-0205-47C9-88B5-613AFECB93F5} = {4C879486-8C25-4FFC-89D1-09E83F968807}
+		{E8FD9FF5-71CD-4A10-8C90-5577688E5A97} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
+		{FAB0E358-D662-452A-901E-62E7864131F2} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BA7246A-7994-41F2-ABFA-7387E160ECF7}

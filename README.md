@@ -5,7 +5,11 @@ PT_Demo_UltimateCollection is an ultimate collection of demos, tests, examples a
 ## Contents
 - [Solution](#solution)
     - [Personal](#personal)
-    - [Telerik](#telerik)
+        - [Async](#async)
+        - [Dapper](#dapper)
+        - [General](#general)
+        - [OOP](#oop)
+        - [SQL](#sql)
     - [Using](#using)
         - [FuzzySharp](#demofuzzysharp-fuzzysharp-202)
         - [RulesEngine](#demorulesengine-rulesengine-503)
@@ -13,7 +17,7 @@ PT_Demo_UltimateCollection is an ultimate collection of demos, tests, examples a
 
 ## Solution
 
-## Personal
+## *Personal*
 
 ### Async
 - Personal.Async.AsyncAwait
@@ -39,6 +43,9 @@ PT_Demo_UltimateCollection is an ultimate collection of demos, tests, examples a
 - CarDemo.Web
 
 ### General
+- Personal.General.EncapsulationVsReflection
+- Personal.General.FuncActionPredicate
+- Personal.General.InterfacesExplicitImplicit
 - Personal.General.jQueryTricks
 - Personal.General.SyntacticTricks
 
@@ -51,11 +58,7 @@ PT_Demo_UltimateCollection is an ultimate collection of demos, tests, examples a
 ### SQL
 - Personal.SQL.BulkInsert
 
-## Telerik
-- Telerik.FuncActionPredicate
-- Telerik.InterfacesExplicitImplicit
-
-## Using
+## *Using*
 
 ### DemoFuzzySharp (FuzzySharp 2.0.2)
 Demo implements Fuzzy Matching using [FuzzySharp library](https://github.com/JakeBayer/FuzzySharp).

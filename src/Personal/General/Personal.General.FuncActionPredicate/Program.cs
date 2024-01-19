@@ -1,11 +1,9 @@
-﻿using System;
-
-namespace Telerik.DemoFuncActionPredicate
+﻿namespace Personal.General.FuncActionPredicate
 {
-    public class Program
+    internal class Program
     {
         static void Main()
-        {            
+        {
             Func<int, int> myFunc1 = x => x * 2;
 
             int num = 2;

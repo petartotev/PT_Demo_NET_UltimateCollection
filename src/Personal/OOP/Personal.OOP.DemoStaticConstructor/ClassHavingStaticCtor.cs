@@ -7,8 +7,8 @@ namespace Personal.OOP.DemoStaticConstructor
         private int propInt;
         private string propString;
 
-        // CS015: 'function' : access modifiers are not allowed on static constructors
-        // A static constructor cannot have an access modifier.
+        // CS015: 'function' : access modifiers are not allowed on static constructors.
+        // A static constructor cannot have an access modifier!
         static ClassHavingStaticCtor()
         {
             Console.WriteLine("This is the static ctor calling!");
@@ -18,6 +18,7 @@ namespace Personal.OOP.DemoStaticConstructor
         {
             PropInt = 0;
             PropString = "string";
+
             Console.WriteLine($"This is the normal ctor called for {objectInstance}!");
         }
 
@@ -25,6 +26,7 @@ namespace Personal.OOP.DemoStaticConstructor
         {
             PropInt = propInt;
             PropString = propString;
+
             Console.WriteLine("This is the normal ctor calling!");
         }
 
