@@ -99,9 +99,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoFuzzySharp", "Using\Dem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoRulesEngine", "Using\DemoRulesEngine\DemoRulesEngine.csproj", "{65DF1995-0205-47C9-88B5-613AFECB93F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal.General.FuncActionPredicate", "Personal\General\Personal.General.FuncActionPredicate\Personal.General.FuncActionPredicate.csproj", "{E8FD9FF5-71CD-4A10-8C90-5577688E5A97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.General.FuncActionPredicate", "Personal\General\Personal.General.FuncActionPredicate\Personal.General.FuncActionPredicate.csproj", "{E8FD9FF5-71CD-4A10-8C90-5577688E5A97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal.General.InterfacesExplicitImplicit", "Personal\General\Personal.General.InterfacesExplicitImplicit\Personal.General.InterfacesExplicitImplicit.csproj", "{FAB0E358-D662-452A-901E-62E7864131F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.General.InterfacesExplicitImplicit", "Personal\General\Personal.General.InterfacesExplicitImplicit\Personal.General.InterfacesExplicitImplicit.csproj", "{FAB0E358-D662-452A-901E-62E7864131F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoIonicZlibCore", "Using\DemoIonicZlibCore\DemoIonicZlibCore.csproj", "{3203F4FA-69BD-45A0-8EE2-EA0CAC521C86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -257,6 +259,10 @@ Global
 		{FAB0E358-D662-452A-901E-62E7864131F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAB0E358-D662-452A-901E-62E7864131F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAB0E358-D662-452A-901E-62E7864131F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3203F4FA-69BD-45A0-8EE2-EA0CAC521C86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3203F4FA-69BD-45A0-8EE2-EA0CAC521C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3203F4FA-69BD-45A0-8EE2-EA0CAC521C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3203F4FA-69BD-45A0-8EE2-EA0CAC521C86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -310,6 +316,7 @@ Global
 		{65DF1995-0205-47C9-88B5-613AFECB93F5} = {4C879486-8C25-4FFC-89D1-09E83F968807}
 		{E8FD9FF5-71CD-4A10-8C90-5577688E5A97} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
 		{FAB0E358-D662-452A-901E-62E7864131F2} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
+		{3203F4FA-69BD-45A0-8EE2-EA0CAC521C86} = {4C879486-8C25-4FFC-89D1-09E83F968807}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BA7246A-7994-41F2-ABFA-7387E160ECF7}
