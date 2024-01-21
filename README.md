@@ -9,7 +9,10 @@ PT_Demo_UltimateCollection is an ultimate collection of demos, tests, examples a
         - [Dapper](#dapper)
         - [General](#general)
         - [OOP](#oop)
-        - [SQL](#sql)
+    - [SQL](#sql)
+        - [BulkInsert](#sqlserverbulkinsert)
+            - [Initial Setup](#initial-setup)
+            - [Implementation and Execution](#implementation-and-execution)
     - [Using](#using)
         - [FuzzySharp](#demofuzzysharp-fuzzysharp-202)
         - [RulesEngine](#demorulesengine-rulesengine-503)
@@ -32,6 +35,7 @@ PT_Demo_UltimateCollection is an ultimate collection of demos, tests, examples a
 - Personal.Async.TaskRun
 - Personal.Async.ThreadNew
 - Personal.Async.ThreadsDeadlock
+- Personal.Async.WpfDemo
 
 ### Dapper
 - CarDemo.Console
@@ -55,8 +59,33 @@ PT_Demo_UltimateCollection is an ultimate collection of demos, tests, examples a
 - Personal.OOP.DemoEncapsulationLib1
 - Personal.OOP.DemoStaticConstructor
 
-### SQL
-- Personal.SQL.BulkInsert
+## SQL
+
+### SqlServerBulkInsert
+
+#### Initial Setup
+
+1. Open MSSMS and create a new empty database `Northwind`:
+
+```
+CREATE DATABASE Northwind
+GO
+```
+
+2. Execute `instnwnd.sql` and `instpubs.sql` - either [downloaded from here](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs) or using the files stored locally in the `/res` directory of this project.<br>
+This will build the `Northwind` database (recommended as [a sample database](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases) by Microsoft and seed data in it.
+
+#### Implementation and Execution
+
+1. Install the following NuGet package:
+
+```
+dotnet add package System.Data.SqlClient
+```
+
+2. Implement the codebase as it is in the repository.
+
+3. Execute the application with `SqlManager.DeleteRowsCreatedHere()` commented out in `Main()`.
 
 ## *Using*
 
@@ -67,5 +96,6 @@ Demo implements Fuzzy Matching using [FuzzySharp library](https://github.com/Jak
 Demo uses [RulesEngine library](https://github.com/microsoft/RulesEngine).
 
 ## Links
+- https://makolyte.com/csharp-how-to-use-sqlbulkcopy-to-do-a-bulk-insert/
 - https://github.com/JakeBayer/FuzzySharp
 - https://github.com/microsoft/RulesEngine
