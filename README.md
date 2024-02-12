@@ -1,6 +1,6 @@
-# PT_Demo_UltimateCollection
+# PT_Demo_NET_UltimateCollection
 
-PT_Demo_UltimateCollection is an ultimate collection of demos, tests, examples and new features for .NET/C#.
+PT_Demo_NET_UltimateCollection is an ultimate collection of demos, tests, examples and new features for .NET/C#.
 
 ## Contents
 - [Solution](#solution)
