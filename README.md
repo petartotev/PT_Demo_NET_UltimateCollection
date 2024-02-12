@@ -1,6 +1,6 @@
 # PT_Demo_NET_UltimateCollection
 
-PT_Demo_NET_UltimateCollection is an ultimate collection of demos, tests, examples and new features for .NET/C#.
+PT_Demo_NET_UltimateCollection is an ultimate collection of demos, tests, examples and new features for .NET (C#).
 
 ## Contents
 - [Solution](#solution)
@@ -14,7 +14,9 @@ PT_Demo_NET_UltimateCollection is an ultimate collection of demos, tests, exampl
             - [Initial Setup](#initial-setup)
             - [Implementation and Execution](#implementation-and-execution)
     - [Using](#using)
+        - [FakeItEasy](#demofakeiteasy-fakeiteasy-810)
         - [FuzzySharp](#demofuzzysharp-fuzzysharp-202)
+        - [Ionic.Zlib.Core](#demoioniczlibcore-ioniczlibcore-100)
         - [RulesEngine](#demorulesengine-rulesengine-503)
 - [Links](#links)
 
@@ -59,7 +61,7 @@ PT_Demo_NET_UltimateCollection is an ultimate collection of demos, tests, exampl
 - Personal.OOP.DemoEncapsulationLib1
 - Personal.OOP.DemoStaticConstructor
 
-## SQL
+## *SQL*
 
 ### SqlServerBulkInsert
 
@@ -89,8 +91,14 @@ dotnet add package System.Data.SqlClient
 
 ## *Using*
 
+### DemoFakeItEasy (FakeItEasy 8.1.0)
+Demo uses [FakeItEasy library](https://fakeiteasy.github.io/) which seems to be a good alternative to Moq.
+
 ### DemoFuzzySharp (FuzzySharp 2.0.2)
 Demo implements Fuzzy Matching using [FuzzySharp library](https://github.com/JakeBayer/FuzzySharp).
+
+### DemoIonicZlibCore (Ionic.Zlib.Core 1.0.0)
+Demo uses [Ionic.Zlib.Core library](https://www.nuget.org/packages/Ionic.Zlib.Core/) which lets you compress and decompress ZLIB-formatted strings.
 
 ### DemoRulesEngine (RulesEngine 5.0.3)
 Demo uses [RulesEngine library](https://github.com/microsoft/RulesEngine).
