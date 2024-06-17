@@ -1,12 +1,11 @@
 ﻿using DemoFakeItEasy.Models.Interfaces;
 
-namespace DemoFakeItEasy.Models
+namespace DemoFakeItEasy.Models;
+
+public class Battery : IBattery
 {
-    public class Battery : IBattery
+    public bool IsCharged()
     {
-        public bool IsCharged()
-        {
-            return new Random().Next(1, 101) <= 50;
-        }
+        return new Random().Next(1, 101) <= 50;
     }
 }

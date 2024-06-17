@@ -105,9 +105,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{7ACA7B83-DBB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlServerBulkInsert", "SQL\SqlServerBulkInsert\SqlServerBulkInsert.csproj", "{80D99C99-BA5F-44B9-9E50-AFB047F121A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoFakeItEasy", "Using\DemoFakeItEasy\DemoFakeItEasy.csproj", "{DD1927A4-D4A7-4A76-B7FA-AEFC8218726B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoFakeItEasy", "Using\DemoFakeItEasy\DemoFakeItEasy.csproj", "{DD1927A4-D4A7-4A76-B7FA-AEFC8218726B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoFakeItEasy.Tests", "Using\DemoFakeItEasy.Tests\DemoFakeItEasy.Tests.csproj", "{E161C0DA-F8F5-40A7-BA15-D65D57F844DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoFakeItEasy.Tests", "Using\DemoFakeItEasy.Tests\DemoFakeItEasy.Tests.csproj", "{E161C0DA-F8F5-40A7-BA15-D65D57F844DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal.General.Hash", "Personal.General.Hash\Personal.General.Hash.csproj", "{194E965A-1696-4ABD-951C-E257D3663689}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -275,6 +277,10 @@ Global
 		{E161C0DA-F8F5-40A7-BA15-D65D57F844DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E161C0DA-F8F5-40A7-BA15-D65D57F844DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E161C0DA-F8F5-40A7-BA15-D65D57F844DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{194E965A-1696-4ABD-951C-E257D3663689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{194E965A-1696-4ABD-951C-E257D3663689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{194E965A-1696-4ABD-951C-E257D3663689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{194E965A-1696-4ABD-951C-E257D3663689}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -330,6 +336,7 @@ Global
 		{80D99C99-BA5F-44B9-9E50-AFB047F121A0} = {7ACA7B83-DBB3-4664-B426-94DE20D9A52D}
 		{DD1927A4-D4A7-4A76-B7FA-AEFC8218726B} = {4C879486-8C25-4FFC-89D1-09E83F968807}
 		{E161C0DA-F8F5-40A7-BA15-D65D57F844DA} = {4C879486-8C25-4FFC-89D1-09E83F968807}
+		{194E965A-1696-4ABD-951C-E257D3663689} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BA7246A-7994-41F2-ABFA-7387E160ECF7}

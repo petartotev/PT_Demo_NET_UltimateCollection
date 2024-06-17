@@ -1,6 +1,5 @@
-﻿namespace DemoFakeItEasy.Exceptions
+﻿namespace DemoFakeItEasy.Exceptions;
+
+public class NotEnoughEnergyException : Exception
 {
-    public class NotEnoughEnergyException : Exception
-    {
-    }
 }
