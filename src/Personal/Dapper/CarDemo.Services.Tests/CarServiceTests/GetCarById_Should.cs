@@ -2,7 +2,6 @@
 using CarDemo.Data;
 using CarDemo.Data.Models;
 using CarDemo.Services.Models.Car;
-using System.Linq;
 using Xunit;
 
 namespace CarDemo.Services.Tests.CarServiceTests

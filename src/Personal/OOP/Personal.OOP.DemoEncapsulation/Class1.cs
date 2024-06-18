@@ -1,6 +1,4 @@
-﻿using Personal.OOP.DemoEncapsulationLib1;
-
-namespace Personal.OOP.DemoEncapsulation
+﻿namespace Personal.OOP.DemoEncapsulation
 {
     public class Class1
     {

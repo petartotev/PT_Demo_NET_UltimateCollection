@@ -1,4 +1,7 @@
-﻿namespace Personal.General.Hash;
+﻿using Personal.General.Hash.Helpers;
+using Personal.General.Hash.Models;
+
+namespace Personal.General.Hash;
 
 public class Program
 {
@@ -54,5 +57,32 @@ public class Program
 
         Console.WriteLine($"Value for 'key1': {hashTable.Get("key1")}");
         Console.WriteLine($"Value for 'key2': {hashTable.Get("key2")}");
+
+        // ======================================== GetHashCode ========================================
+        var person1 = new PersonHashDefault
+        {
+            FirstName = "Petar",
+            LastName = "Totev",
+            DateOfBirth = DateTime.Now.AddYears(-34),
+            Email = "petar@petartotev.net"
+        };
+
+        // 43942917
+        var person1HashCode = person1.GetHashCode();
+        Console.WriteLine("person1 Hash Code: " + person1HashCode);
+
+        var person2 = new PersonHashOverridden
+        {
+            FirstName = "Petar",
+            LastName = "Totev",
+            DateOfBirth = DateTime.Now.AddYears(-34),
+            Email = "petar@petartotev.net"
+        };
+
+        // -1380672416
+        // Hash codes in .NET are represented as signed 32-bit integers => range of possible values: from -2,147,483,648 to 2,147,483,647.
+        // When using the HashCode.Combine method or even when manually combining hash codes, the resulting integer can fall anywhere within this range.
+        var person2HashCode = person2.GetHashCode();
+        Console.WriteLine("person2 Hash Code: " + person2HashCode);
     }
 }

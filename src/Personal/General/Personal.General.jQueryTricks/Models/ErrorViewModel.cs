@@ -1,5 +1,3 @@
-using System;
-
 namespace Personal.General.jQueryTricks.Models
 {
     public class ErrorViewModel

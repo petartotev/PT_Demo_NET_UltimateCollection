@@ -1,4 +1,4 @@
-﻿namespace Personal.General.Hash;
+﻿namespace Personal.General.Hash.Models;
 
 public class SimpleHashTable<TKey, TValue>
 {
@@ -20,9 +20,9 @@ public class SimpleHashTable<TKey, TValue>
         var position = GetArrayPosition(key);
 
         LinkedList<KeyValuePair<TKey, TValue>> linkedList = items[position];
-        
+
         var item = new KeyValuePair<TKey, TValue>(key, value);
-        
+
         linkedList.AddLast(item);
     }
 
@@ -40,7 +40,7 @@ public class SimpleHashTable<TKey, TValue>
             }
         }
 
-        return default(TValue);
+        return default;
     }
 
     private static int GetArrayPosition(TKey key)
