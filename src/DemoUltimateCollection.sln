@@ -111,6 +111,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoFakeItEasy.Tests", "Usi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal.General.Hash", "Personal.General.Hash\Personal.General.Hash.csproj", "{194E965A-1696-4ABD-951C-E257D3663689}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal.General.DependencyInjection", "Personal\General\Personal.General.DependencyInjection\Personal.General.DependencyInjection.csproj", "{96E1D16B-ED9D-4392-B66E-7D2BAC79AC9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -281,6 +283,10 @@ Global
 		{194E965A-1696-4ABD-951C-E257D3663689}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{194E965A-1696-4ABD-951C-E257D3663689}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{194E965A-1696-4ABD-951C-E257D3663689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96E1D16B-ED9D-4392-B66E-7D2BAC79AC9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96E1D16B-ED9D-4392-B66E-7D2BAC79AC9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96E1D16B-ED9D-4392-B66E-7D2BAC79AC9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96E1D16B-ED9D-4392-B66E-7D2BAC79AC9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -337,6 +343,7 @@ Global
 		{DD1927A4-D4A7-4A76-B7FA-AEFC8218726B} = {4C879486-8C25-4FFC-89D1-09E83F968807}
 		{E161C0DA-F8F5-40A7-BA15-D65D57F844DA} = {4C879486-8C25-4FFC-89D1-09E83F968807}
 		{194E965A-1696-4ABD-951C-E257D3663689} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
+		{96E1D16B-ED9D-4392-B66E-7D2BAC79AC9E} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BA7246A-7994-41F2-ABFA-7387E160ECF7}
