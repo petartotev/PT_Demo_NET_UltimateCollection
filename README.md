@@ -2,66 +2,112 @@
 
 PT_Demo_NET_UltimateCollection is an ultimate collection of demos, tests, examples and new features for .NET (C#).
 
-## Contents
-- [Solution](#solution)
-    - [Personal](#personal)
-        - [Async](#async)
-        - [Dapper](#dapper)
-        - [General](#general)
-        - [OOP](#oop)
-    - [SQL](#sql)
-        - [BulkInsert](#sqlserverbulkinsert)
-            - [Initial Setup](#initial-setup)
-            - [Implementation and Execution](#implementation-and-execution)
-    - [Using](#using)
-        - [FakeItEasy](#demofakeiteasy-fakeiteasy-810)
-        - [FuzzySharp](#demofuzzysharp-fuzzysharp-202)
-        - [Ionic.Zlib.Core](#demoioniczlibcore-ioniczlibcore-100)
-        - [RulesEngine](#demorulesengine-rulesengine-503)
+# Contents
+- [Personal](#personal)
+    - [Async](#async)
+    - [Dapper](#dapper)
+    - [General](#general)
+        - [Dependency Injection](#personalgeneraldependencyinjection)
+    - [OOP](#oop)
+- [SQL](#sql)
+    - [BulkInsert](#sqlserverbulkinsert)
+        - [Initial Setup](#initial-setup)
+        - [Implementation and Execution](#implementation-and-execution)
+- [Using](#using)
+    - [FakeItEasy](#demofakeiteasy-fakeiteasy-810)
+    - [FuzzySharp](#demofuzzysharp-fuzzysharp-202)
+    - [Ionic.Zlib.Core](#demoioniczlibcore-ioniczlibcore-100)
+    - [RulesEngine](#demorulesengine-rulesengine-503)
 - [Links](#links)
 
-## Solution
+# Personal
 
-## *Personal*
+## Async
 
-### Async
-- Personal.Async.AsyncAwait
-- Personal.Async.Pluralsight.Article.1.TPL
-- Personal.Async.Pluralsight.Article.2.AsyncAwait
-- Personal.Async.Pluralsight.Article.3.ControlFlow
-- Personal.Async.Pluralsight.Article.4.AsyncTaskRun
-- Personal.Async.Pluralsight.Article.5.AsyncTaskRun
-- Personal.Async.Semaphore
-- Personal.Async.Synchronous
-- Personal.Async.TaskCancellation
-- Personal.Async.TaskRun
-- Personal.Async.ThreadNew
-- Personal.Async.ThreadsDeadlock
-- Personal.Async.WpfDemo
+### Personal.Async.AsyncAwait
+### Personal.Async.Pluralsight.Article.1.TPL
+### Personal.Async.Pluralsight.Article.2.AsyncAwait
+### Personal.Async.Pluralsight.Article.3.ControlFlow
+### Personal.Async.Pluralsight.Article.4.AsyncTaskRun
+### Personal.Async.Pluralsight.Article.5.AsyncTaskRun
+### Personal.Async.Semaphore
+### Personal.Async.Synchronous
+### Personal.Async.TaskCancellation
+### Personal.Async.TaskRun
+### Personal.Async.ThreadNew
+### Personal.Async.ThreadsDeadlock
+### Personal.Async.WpfDemo
 
-### Dapper
-- CarDemo.Console
-- CarDemo.Data
-- CarDemo.Data.Models
-- CarDemo.Services
-- CarDemo.Services.Models
-- CarDemo.Services.Tests
-- CarDemo.Web
+## Dapper
 
-### General
-- Personal.General.EncapsulationVsReflection
-- Personal.General.FuncActionPredicate
-- Personal.General.InterfacesExplicitImplicit
-- Personal.General.jQueryTricks
-- Personal.General.SyntacticTricks
+### CarDemo.Console
+### CarDemo.Data
+### CarDemo.Data.Models
+### CarDemo.Services
+### CarDemo.Services.Models
+### CarDemo.Services.Tests
+### CarDemo.Web
 
-### OOP
-- Personal.OOP.DemoAbstractVirtual
-- Personal.OOP.DemoEncapsulation
-- Personal.OOP.DemoEncapsulationLib1
-- Personal.OOP.DemoStaticConstructor
+## General
 
-## *SQL*
+### Personal.General.DependencyInjection
+
+1. Create new blank .NET 8 Console Application.
+
+2. Install NuGet `Microsoft.Extensions.DependencyInjection`.
+
+3. Create interfaces and their respective classes:
+- `ITeacherService`-`TeacherService`;
+- `IParentService`-`ParentService`;
+- `IStudentService`-`StudentService`, injecting IParentService in its constructor.
+
+4. In Program.cs, create new ServiceProvider:
+
+```
+    public static void Main()
+    {
+        var serviceProvider = new ServiceCollection()
+            .AddSingleton<IStudentService, StudentService>()
+            .AddTransient<ITeacherService, TeacherService>()
+            .AddScoped<IParentService, ParentService>()
+            .BuildServiceProvider();
+
+        var student1 = serviceProvider.GetService<IStudentService>();
+        student1.Study();
+
+        var teacher1 = serviceProvider.GetService<ITeacherService>();
+        var teacher2 = serviceProvider.GetService<ITeacherService>();
+        Console.WriteLine($"Transient Test: Are teacher1 and teacher2 the same instance? {teacher1 == teacher2}");
+
+        using (var scope1 = serviceProvider.CreateScope())
+        {
+            var parent1 = scope1.ServiceProvider.GetService<IParentService>();
+            var parent2 = scope1.ServiceProvider.GetService<IParentService>();
+            Console.WriteLine($"Scoped Test (within scope1): Are parent1 and parent2 the same instance? {parent1 == parent2}");
+        }
+
+        using (var scope2 = serviceProvider.CreateScope())
+        {
+            var parent3 = scope2.ServiceProvider.GetService<IParentService>();
+            Console.WriteLine($"Scoped Test (across scopes): Are parent2 and parent3 the same instance? {parent3 == serviceProvider.GetService<IParentService>()}");
+        }
+    }
+```
+
+### Personal.General.EncapsulationVsReflection
+### Personal.General.FuncActionPredicate
+### Personal.General.InterfacesExplicitImplicit
+### Personal.General.jQueryTricks
+### Personal.General.SyntacticTricks
+
+## OOP
+
+### Personal.OOP.DemoAbstractVirtual
+### Personal.OOP.DemoEncapsulation
+### Personal.OOP.DemoEncapsulationLib1
+### Personal.OOP.DemoStaticConstructor
+
+## SQL
 
 ### SqlServerBulkInsert
 
@@ -89,7 +135,7 @@ dotnet add package System.Data.SqlClient
 
 3. Execute the application with `SqlManager.DeleteRowsCreatedHere()` commented out in `Main()`.
 
-## *Using*
+## Using
 
 ### DemoFakeItEasy (FakeItEasy 8.1.0)
 Demo uses [FakeItEasy library](https://fakeiteasy.github.io/) which seems to be a good alternative to Moq.
