@@ -7,6 +7,10 @@ public class Program
 {
     public static void Main()
     {
+        SamplingPercent.PlayWithUserCriteria();
+
+        return;
+
         var thingShortToHash = "Hello, World!";
         var thingLongToHash = "Hello, my beautiful, colorful, wonderful, friendly World!";
 
