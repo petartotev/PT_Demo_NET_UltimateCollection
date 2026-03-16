@@ -117,6 +117,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.General.SemaphoreS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal.Algorithms.FisherYatesShuffle", "Personal\Algorithms\Personal.Algorithms.FisherYatesShuffle\Personal.Algorithms.FisherYatesShuffle.csproj", "{65EA53ED-0B41-40D0-A2AE-7B80ADA83EA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal.Algorithms.LuhnAlgorithmCreditCardChecksum", "Personal\Algorithms\Personal.Algorithms.LuhnAlgorithmCreditCardChecksum\Personal.Algorithms.LuhnAlgorithmCreditCardChecksum.csproj", "{6AA35DF2-1FBF-4448-B243-26D637A9810A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -299,6 +301,10 @@ Global
 		{65EA53ED-0B41-40D0-A2AE-7B80ADA83EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65EA53ED-0B41-40D0-A2AE-7B80ADA83EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65EA53ED-0B41-40D0-A2AE-7B80ADA83EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AA35DF2-1FBF-4448-B243-26D637A9810A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AA35DF2-1FBF-4448-B243-26D637A9810A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AA35DF2-1FBF-4448-B243-26D637A9810A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AA35DF2-1FBF-4448-B243-26D637A9810A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -358,6 +364,7 @@ Global
 		{56022C92-2F68-422B-A2EA-DD20C544DC34} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
 		{257965BE-ABF6-484B-BDB3-C7182D62CADB} = {A01CC6B9-5C2E-4B23-BDF4-7C61A4E5F4CB}
 		{65EA53ED-0B41-40D0-A2AE-7B80ADA83EA9} = {614EEF27-5414-4F5C-BE64-9151EE9EF60B}
+		{6AA35DF2-1FBF-4448-B243-26D637A9810A} = {614EEF27-5414-4F5C-BE64-9151EE9EF60B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BA7246A-7994-41F2-ABFA-7387E160ECF7}
